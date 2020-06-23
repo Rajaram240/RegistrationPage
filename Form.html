@@ -1,0 +1,60 @@
+<!DOCTYPE html><html>  
+<head>  
+<title>
+    Registration page!!!
+</title> 
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head> 
+
+<body>  
+<div class="container">
+  <div class="controls">
+        <h1>Registration page</h1>
+        <label class="required">Username:</label>
+    <input type="text" name="name" required placeholder="enter name" onchange="callName()"id="nameinput"><br>
+    
+    <br>
+    <label class="required">Gender:</label>
+   male <input type="radio" name="male"  value="male"  onclick="callgender()" class="genderinput">
+   female <input type="radio" name="male"  value="Female" onclick="callgender()"class="genderinput"><br><br>
+   <label>City Lived:</label>
+   <input type="checkbox" class="city" value="bangalore" onchange="callCity()">bangalore
+   <input type="checkbox" class="city" value="chennai" onchange="callCity()">chennai 
+   <input type="checkbox" class="city" value="kolkata" onchange="callCity()">chennai 
+    <br><br>
+    <label for="cars">Choose a car:</label>
+    <select name="cars" id="cars">
+      <option value="please select">please select</option>
+      <option class="cars"value="volvo">Volvo</option>
+      <option class="cars"value="saab">Saab</option>
+      <option class="cars"value="opel">Opel</option>
+      <option class="cars"value="audi">Audi</option>
+    </select>    <br>
+    <br>
+    <label class="required">Email:</label>
+<input type="text" id="emailinput" onchange="callEmail()"><br><br>
+<label class="required">Phone:</label>
+<input type="text" id="phoneinput" onchange="callPhone()"><br><br>
+<label class="required">Percentage of Travel:</label>
+<input type="number" id="percentage" onchange="callPercentage()"><br><br>
+
+    <button onclick="callCars()">Submit</button><br>
+    <span id="nameerror"></span>
+    <span id="genderror"></span>
+    <span id="cityerror"></span>
+    <span id="droperror"></span>
+    <span id="emailerror"></span>
+<span id="phoneerror"></span>
+<span id="percentageerror"></span>
+
+    <script src="script.js"></script>
+    </div>
+    </div>
+    </body>
+    </html>
